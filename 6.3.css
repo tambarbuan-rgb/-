@@ -1,0 +1,18 @@
+#elem1 {
+	width: 200px;
+	white-space: pre;
+	border: 1px solid red;
+
+}
+#elem2 {
+	width: 200px;
+	white-space: pre-wrap;
+	border: 1px solid red;
+
+}
+#elem3 {
+	width: 200px;
+	white-space: pre-line;
+	border: 1px solid red;
+
+}

@@ -1,0 +1,21 @@
+li::before {
+	content: '.';
+}
+span {
+    position: relative; /* Чтобы absolute работал относительно span */
+}
+
+span::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    
+    /* Абсолютное позиционирование */
+    position: absolute;
+    top: -5px;        /* На 5px выше верхнего края span */
+    right: -5px;       /* На 5px правее правого края span */
+    
+    /* Опционально: рамка для чёткости */
+    box-sizing: border-box;
+}

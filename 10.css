@@ -1,0 +1,12 @@
+#elem1 {
+	width: 200px;
+	word-break: break-all;
+	border: 1px solid red;
+	margin: 20px; 
+}
+#elem2 {
+	overflow-wrap: break-word; 
+	border: 1px solid red;
+	width: 200px;
+	margin: 20px;
+} 

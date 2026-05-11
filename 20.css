@@ -1,0 +1,16 @@
+
+			table, td {
+				border: 1px solid #004800;
+			}
+			table {
+				empty-cells: hide;
+				border-spacing: 10px;
+				border-collapse: separate;
+			} 
+			td {
+				background-color: #00A876;
+				color: white;
+				padding: 6px 10px;
+			}
+			
+		

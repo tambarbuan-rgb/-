@@ -1,0 +1,16 @@
+
+			table, td {
+				border: 1px solid #004800;
+			}
+			table {
+				border-spacing: 20px;
+			}
+			td {
+				height: 50px;
+				width: 100px;
+				background-color: #00A876;
+				color: white;
+				text-align: center;
+				table-layout: fixed;
+			}
+		

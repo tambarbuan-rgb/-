@@ -1,0 +1,11 @@
+#elem {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    margin: 20px;
+    overflow-y: hidden;
+    transition: height 0.3s ease; /* Плавное изменение высоты */
+}
+#elem:hover {
+    height: auto; /* На время наведения делаем высоту достаточной */
+}
