@@ -1,31 +1,137 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<link rel="stylesheet" href="1.css">
-	</head>
-	<body>
-        <div class="container">
-            <h1>BASIC REGISTER FORM</h1>
-            <form action="#" method="POST">
-                <label for="name">Name*</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="username">Username*</label>
-                <input type="text" id="username" name="username" required>
-
-                <label for="password">Password*</label>
-                <input type="password" id="password" name="password" required>
-
-                <label for="number">Number*</label>
-                <input type="tel" id="number" name="number" required>
-
-                <label for="email">Email Id*</label>
-                <input type="email" id="email" name="email" required>
-
-                <button type="submit">Register</button>
-            </form>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Праздник в каждый дом — организация детских праздников</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Праздник в каждый дом">
         </div>
-    </body>
+        <nav class="nav">
+            <a href="#promo">Акции</a>
+            <a href="#locations">Наши локации</a>
+            <a href="#search">Поиск</a>
+            <a href="#booking">Управление бронированием</a>
+        </nav>
+    </header>
+
+    <!-- Секция о компании -->
+    <section class="about">
+        <h1>Подарим волшебство для Ваших детей!</h1>
+        <p>Наша цель — сделать праздничные дни незабываемыми для детей и их родителей.</p>
+
+        <!-- Отзывы клиентов -->
+        <div class="reviews">
+            <div class="review-card">
+                <p>«Замечательный праздник для дочки! Всё продумано до мелочей.»</p>
+                <span>Анна, мама 8‑летней Софии</span>
+            </div>
+            <div class="review-card">
+                <p>«Аниматоры — профессионалы! Дети в восторге!»</p>
+                <span>Михаил, папа 6‑летнего Артёма</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Алгоритм бронирования -->
+    <section class="steps" id="steps">
+        <h2>Как забронировать праздник</h2>
+        <div class="step">
+            <div class="step-number">1</div>
+            <h3>Выберите даты праздника</h3>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <h3>Укажите количество участников</h3>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <h3>Выберите локацию</h3>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <h3>Оформите заказ</h3>
+        </div>
+    </section>
+
+    <!-- Форма поиска -->
+    <section class="search-section" id="search">
+        <h2>Найдите идеальную локацию</h2>
+        <form class="search-form">
+            <select name="region" required>
+                <option value="" disabled selected>Выберите регион</option>
+                <option value="msk">Москва</option>
+                <option value="spb">Санкт‑Петербург</option>
+                <option value="ekb">Екатеринбург</option>
+            </select>
+
+            <input type="date" name="date" required>
+
+            <div class="participants">
+                <input type="number" name="adults" min="1" max="50" placeholder="Взрослые" required>
+                <input type="number" name="children" min="1" max="50" placeholder="Дети" required>
+            </div>
+
+            <button type="submit">Поиск</button>
+        </form>
+    </section>
+
+    <!-- Секция акций -->
+    <section class="promotions" id="promo">
+        <h2>Наши акции</h2>
+        <div class="promo-grid">
+            <div class="promo-card">
+                <img src="promo1.jpg" alt="Акция: День рождения со скидкой 20 %">
+                <h3>День рождения со скидкой 20 %</h3>
+                <p>Забронируйте праздник до конца месяца!</p>
+                <button>Подробнее</button>
+            </div>
+            <div class="promo-card">
+                <img src="promo2.jpg" alt="Акция: Аниматоры в подарок">
+                <h3>Аниматоры в подарок</h3>
+                <p>При заказе от 30 человек.</p>
+                <button>Подробнее</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подписка на акции -->
+    <section class="subscription">
+        <h2>Подпишитесь на закрытые акции</h2>
+        <form class="subscribe-form">
+            <input type="email" placeholder="Ваш email" required>
+            <button type="submit">Подписаться</button>
+        </form>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <p>Телефон: 8 (800) 222-35-35</p>
+        <nav class="footer-nav">
+            <a href="#promo">Акции</a>
+            <a href="#locations">Наши локации</a>
+            <a href="#about">О нас</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </footer>
+
+    <script>
+        // Простая валидация формы поиска
+        document.querySelector('.search-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Поиск запущен! В реальной версии здесь будет отправка данных.');
+        });
+
+        // Валидация подписки
+        document.querySelector('.subscribe-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Вы успешно подписались на акции!');
+        });
+    </script>
+</body>
 </html>
